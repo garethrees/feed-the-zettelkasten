@@ -9,7 +9,7 @@ Command Line Seinfeld calendar for The Archive Zettelkasten notes.
 ## Usage
 
 ```
-$ feed-the-zettelkasten --from=2020-09-25 --to=2020-10-04 --target=1 ~/notes
+$ feed-the-zettelkasten ~/notes
 2020-09-25: ❌
 2020-09-26: ✅
 2020-09-27: ❌
@@ -20,6 +20,15 @@ $ feed-the-zettelkasten --from=2020-09-25 --to=2020-10-04 --target=1 ~/notes
 2020-10-02: ✅
 2020-10-03: ✅
 2020-10-04: ❌
+
+$ feed-the-zettelkasten --help
+Usage: feed-the-zettelkasten [options] NOTES_DIR
+        --from[=DATE]                Include notes after DATE (default: 30 days ago)
+        --to[=DATE]                  Include notes before DATE (default: today)
+        --target[=INTEGER]           Number of notes required to meet daily goal (default: 3)
+        --ext[=STRING]               Note extension (default: md)
+    -v, --version                    Print version
+    -h, --help                       Prints this help
 ```
 
 ## Development
